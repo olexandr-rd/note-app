@@ -1,0 +1,42 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 1vw + .4rem, 2rem);
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: none;
+    width: 30%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*max-width: 30%;*/
+}
+
+form :is(input, select) {
+    display: inline-block;
+}
+
+.form-bottom > * {
+    display: block;
+    width: 100%;
+}
+
+.open {
+    display: block;
+}
